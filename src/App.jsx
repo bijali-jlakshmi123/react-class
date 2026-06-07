@@ -24,7 +24,7 @@ function App() {
       </div>
       <div>
         <h1>State handling - {name}</h1>
-        <button>state chnge btn</button>
+        <button onClick={() => setName("raj")}>state chnge btn</button>
       </div>
     </>
   );

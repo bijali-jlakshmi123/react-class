@@ -4,6 +4,8 @@ import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
 import "./App.css";
 import Header from "./Header";
+import Counter from "./Counter";
+
 function App() {
   const [name, setName] = useState("bijali");
   return (
@@ -25,6 +27,17 @@ function App() {
       <div>
         <h1>State handling - {name}</h1>
         <button onClick={() => setName("raj")}>state chnge btn</button>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <h1>Counter App</h1>
+        <Counter />
       </div>
     </>
   );
